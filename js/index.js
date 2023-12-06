@@ -15,7 +15,7 @@ function closeNotification() {
 }
 
 document.getElementById("articleBtn").onclick = function() {
-    window.location.href = "../HTML/NewForm.html";
+    window.location.href = "NewForm.html";
 };
 
 document.getElementById("closeBtn").onclick = function() {
