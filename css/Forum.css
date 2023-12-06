@@ -1,0 +1,72 @@
+body, h1, h2, h3, p, aside, a, button, textarea, input{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.forum-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body{
+    background: #333333;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.messages {
+    margin-top: 20px;
+}
+
+.message {
+    margin-bottom: 10px;
+    border: 1px solid rgb(128, 128, 128);
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.username {
+    font-weight: bold;
+    color: rgba(255, 105, 0, 0.91);
+}
+
+.content {
+    margin-top: 5px;
+}
+
+.comment-form {
+    margin-top: 20px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.comment-form button {
+    background-color: rgba(255, 105, 0, 0.91);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button{
+    border-radius: 5px;
+    padding: 3px 5px;
+    border: none;
+    color: white;
+    background-color: rgba(255, 105, 0, 0.91);
+}

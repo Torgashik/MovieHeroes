@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel ="stylesheet" href="css/NewForm.css">
+    <link rel="icon" href="img/icons/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <title>Киногерои: Форма</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src ="js/NewForm.js"></script>
+</head>
+    <body>
+        <header>
+            <h1> <a name = "Main">Форма</a></h1>
+            <img src = "img/icons/logo.png">
+            <nav>
+                <ul>
+                    <li><a href="index.html">На главную</a></li>
+                    <li><a href="#Reg">Регестрация</a></li>
+                    <li><a href="#Contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Форма</h1>
+
+        <section>
+            <h2><a name = "Reg">Данные пользователя</a></h2>
+            <label for="name-input">Имя (никнейм):</label>
+            <input type="text" id="name-input"> <br><br>
+
+            <label for="contact-input">Почта или номер телефона для связи:</label>
+            <input type="text" id="contact-input"> <br><br>
+
+            <p>Мне есть 18 лет:</p>
+            <button id="confirm-yes">Да</button>
+            <button id="confirm-no">Нет</button> <br><br>
+        </section>
+        <section>
+            <div class="hidden-content">
+                <h2>Анкета киногероя</h2>
+                <label for="character-input">Киногерой:</label>
+                <input type="text" id="character-input"> <br><br>
+
+                <label for="bio-input">Комментарий:</label>
+                <textarea id="bio-input" class="large-textarea"></textarea> <br><br>
+
+                <body onload="createCaptcha()">
+                <form onsubmit="validateCaptcha()">
+                    <div id="captcha">
+                    </div>
+                    <input type="text" placeholder="Captcha" id="cpatchaTextBox"/>
+                    <button type="submit">Отправить предложение</button>
+                </form>
+                </body>
+            </div>
+
+
+            <div class="access-denied" style="color: rgba(255,105,0,0.91);">
+                Доступ запрещен!
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2> <a name = "Contacts"> Контакты</a></h2>
+        <br>
+        <address>
+            <a>Адрес: пр. Вернадского, 78, г.Москва</a>
+            <br>
+            <a href = "tel:+79858751917"> Телефон: +7 (985) 875 19-17</a>
+            <br>
+            <a href = "mailto:dolgov.r.s@edu.mirea.ru">Почта: dolgov.r.s@edu.mirea.ru</a>
+            <br>
+            <br>
+            <a>© 2023 Все права защищены.</a>
+        </address>
+        <div class="containeri">
+            <a href="https://vk.com/">
+                <div class="icon">
+                    <img src="img/icons/vkicon.png" width="40" height="40">
+                </div>
+            </a>
+            <a href="https://www.youtube.com/">
+               <div class="icon">
+                   <img src="../img/icons/youtubeIcon.png" width="40" height="40">
+               </div>
+            </a>
+            <a href="https://ok.ru/">
+               <div class="icon">
+                   <img src="img/icons/okicon.png" width="40" height="40">
+               </div>
+            </a>
+        </div>
+        </footer>
+    </body>
+</html>

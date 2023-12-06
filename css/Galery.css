@@ -1,0 +1,103 @@
+@keyframes fadeIn
+{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.fadeIn
+{
+    animation: fadeIn 2s ease-in forwards;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        & section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 110vw;
+            height: 110vh;
+            scroll-snap-align: start;
+            background-position: center;
+            transition: background-position 0.5s ease-out;
+
+            &:nth-of-type(1) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.08)), url("https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/12776f88-26f2-4f34-85a4-3084550ef932/1920x");
+                background-size: cover;
+                background-position: center;
+                background-color: rgb(28, 28, 28);
+                color: white;
+            }
+
+            &:nth-of-type(2) {
+                background-color: rgb(38, 38, 38);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.08)), url("../img/pictures/Pic2.jpg");
+                background-size: cover;
+                background-position: center;
+                background-color: rgb(38, 38, 38);
+                color: white;
+            }
+
+            &:nth-of-type(3) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.08)), url("https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/61a189f7-a83d-4600-9832-27dcd2b66fb4/1920x");
+                background-size: cover;
+                background-position: center;
+                background-color: rgb(48, 48, 48);
+                color: white;
+            }
+
+            &:nth-of-type(4) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.08)), url("../img/pictures/Pic4.jpg");
+                background-size: cover;
+                background-position: center;
+                background-color: rgb(58, 58, 58);
+                color: white;
+            }
+
+            & h1 {
+                opacity: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 6em;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 0.25em;
+            }
+        }
+    }
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    padding: 10px;
+    color: #ff6600;
+    width: 5%;
+}
+
+a{
+    color: #ff6600;
+}
+
+@media(max-width: 1000px){
+    body{
+        .container{
+            & section{
+                height: 50%;
+            }
+        }
+    }
+    .sticky{
+        width: 10%;
+    }
+}
